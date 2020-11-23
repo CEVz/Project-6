@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/EventBuilder.h
+fstream
+-
+Event.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Event.h
+
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Simulation.h
+Event.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Event.h
+EventBuilder.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/EventBuilder.h
+LinkedQueue.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/LinkedQueue.h
+PriorityQueue.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/PriorityQueue.h
+Statistics.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Statistics.h
+
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Statistics.h
+Event.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Event.h
+LinkedQueue.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/LinkedQueue.h
+
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/project6.cpp
+cstdlib
+-
+Simulation.h
+/home/csugrads/vogel507/cs1521/projects/project6/oneTeller/Simulation.h
+
