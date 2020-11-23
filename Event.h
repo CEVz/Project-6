@@ -28,7 +28,7 @@ public:
 	ItemType getTime() const;
 	ItemType getEvent() const;
 	ItemType getDuration() const;
-	int getNum() const;
+	int getNumber() const;
 
 };
 

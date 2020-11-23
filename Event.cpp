@@ -1,3 +1,5 @@
+#pragma once
+
 bool Event::operator<(const Event& rhs) const {
 
 	return time < rhs.time;
@@ -33,7 +35,7 @@ bool Event::operator!=(const Event& rhs) const {
 	return time != rhs.time;
 }
 
-int Event::getNum() const {
+int Event::getNumber() const {
 
 	return number;
 
