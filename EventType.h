@@ -1,5 +1,4 @@
-#ifndef EVENT_TYPE_
-#define EVENT_TYPE_
+#pragma once
 
 #include "Time.h"
 
@@ -8,3 +7,4 @@ enum class EventType {
 	arrival,
 	departure
 };
+

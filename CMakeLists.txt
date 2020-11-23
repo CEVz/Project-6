@@ -22,4 +22,4 @@ add_executable(main
   PrecondViolatedExcep.cpp 
   Node.h 
   LinkedSortedList.h 
-  SortedListInterface.h)
+  SortedListInterface.h "LinkedSortedList.cpp")

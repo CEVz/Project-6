@@ -7,7 +7,7 @@ using ItemType = double;
 
 class Time {
 private:
-	ItemType Time;
+	ItemType time;
 
 public:
 	Time();

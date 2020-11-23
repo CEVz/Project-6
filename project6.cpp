@@ -9,6 +9,4 @@ int main() {
    sim.simulate();
 
    return EXIT_SUCCESS;
-
-   std::cout << "hello world";
 }
