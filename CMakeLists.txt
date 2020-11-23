@@ -17,4 +17,9 @@ set(CMAKE_CXX_EXTENSIONs OFF)
 
 add_executable(main
   project6.cpp
-  PrecondViolatedExcep.cpp)
+  Time.h
+  Statistics.cpp
+  PrecondViolatedExcep.cpp 
+  Node.h 
+  LinkedSortedList.h 
+  SortedListInterface.h)
