@@ -1,23 +1,25 @@
 #pragma once
 
 #include "Time.h"
+#include "EventType.h"
 
-template <typename ItemType>
 class Event {
 private:
 	
-	EventType<ItemType> type;
-	Time<ItemType> time;
-	Time<ItemType> duration;
+	EventType type;
+	Time time;
+	Time duration;
 	int number;
 
 
 public:
 
-
-
-
-
+	bool Event::operator<(const Event& rhs) const;
+	bool Event::operator>(const Event& rhs) const;
+	bool Event::operator<=(const Event& rhs) const;
+	bool Event::operator>=(const Event& rhs) const;
+	bool Event::operator==(const Event& rhs) const;
+	bool Event::operator!=(const Event& rhs) const;
 
 };
 
