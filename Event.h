@@ -6,7 +6,7 @@
 class Event {
 private:
 	
-	EventType type;
+	//EventType type;
 	Time time;
 	Time duration;
 	int number;
@@ -14,16 +14,18 @@ private:
 
 public:
 
-	bool Event::operator<(const Event& rhs) const;
-	bool Event::operator>(const Event& rhs) const;
-	bool Event::operator<=(const Event& rhs) const;
-	bool Event::operator>=(const Event& rhs) const;
-	bool Event::operator==(const Event& rhs) const;
-	bool Event::operator!=(const Event& rhs) const;
+	Event();
+
+	bool operator<(const Event& rhs) const;
+	bool operator>(const Event& rhs) const;
+	bool operator<=(const Event& rhs) const;
+	bool operator>=(const Event& rhs) const;
+	bool operator==(const Event& rhs) const;
+	bool operator!=(const Event& rhs) const;
 	
 	void setTime(const Time& theTime);
 	void setDuration(const Time& theDuration);
-	void setEvent(const EventType& theType);
+	//void setEvent(const EventType& theType);
 	void setNum(const int theNum);
 	ItemType getTime() const;
 	ItemType getEvent() const;

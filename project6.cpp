@@ -4,9 +4,9 @@
 
 int main() {
 
-   Simulation sim;
+   //Simulation sim;
 
-   sim.simulate();
+   //sim.simulate();
 
    return EXIT_SUCCESS;
 }

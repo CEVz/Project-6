@@ -1,6 +1,9 @@
-#pragma once
+#ifndef EVENT_
+#define EVENT_
 
-bool Event::operator<(const Event& rhs) const {
+Event::Event() {}
+
+bool Event::operator<(const Event& rhs) const{
 
 	return time < rhs.time;
 
@@ -53,11 +56,11 @@ void Event::setDuration(const Time& theDuration) {
 
 }
 
-void Event::setEvent(const EventType& theType) {
+//void Event::setEvent(const EventType& theType) {
 
-	type = theType;
+//	type = theType;
 
-}
+//}
 
 void Event::setNum(const int theNum) {
 
@@ -83,9 +86,10 @@ ItemType Event::getDuration() const {
 
 }
 
-int Event::getNum() const {
+int Event::getNumber() const {
 
 	return number;
 
 }
 
+#endif

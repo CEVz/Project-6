@@ -3,7 +3,7 @@
 
 #include <memory>
 
-#include "PriorityQueueInterface.h"
+#include "QueueInterface.h"
 #include "Node.h"
 
 /** @class LinkedQueue LinkedQueue.h "LinkedQueue.h"
