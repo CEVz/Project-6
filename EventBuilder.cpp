@@ -18,6 +18,7 @@ EventBuilder::EventBuilder() {
 
 	if (inputFile.is_open()){
 		inputFile >> num;
+		std::cout << num;
 		inputFile.close();
 	}
 

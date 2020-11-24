@@ -24,12 +24,20 @@ void Simulation::simulate() {
 
 void Simulation::processArrival() {
 
-	std::cout << "helo";
+	Event currentEvent;
+	events.enqueue(currentEvent);
+	EventBuilder eventBuilder;
+	line.enqueue(currentEvent);
+	stats.addEvent(currentEvent);
 
 }
 
 void Simulation::processDeparture() {
 
-	std::cout << "helo";
+	Event currentEvent;
+	events.enqueue(currentEvent);
+	EventBuilder eventBuilder;
+	line.enqueue(currentEvent);
+	stats.addEvent(currentEvent);
 
 }

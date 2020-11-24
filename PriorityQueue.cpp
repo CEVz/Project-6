@@ -1,4 +1,5 @@
 #include <memory>
+#include <queue>
 
 template <typename ItemType>
 PriorityQueue<ItemType>::PriorityQueue()
