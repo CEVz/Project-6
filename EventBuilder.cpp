@@ -32,6 +32,8 @@ Event EventBuilder::createArrivalEvent(int number) {
 	arrivalEvent.setTime(num);
 	arrivalEvent.setDuration(num);
 
+	return arrivalEvent;
+
 }
 
 Event EventBuilder::createDepartureEvent(const Time& currentEventTime, const Time& transactionLength, int number) {
@@ -40,5 +42,7 @@ Event EventBuilder::createDepartureEvent(const Time& currentEventTime, const Tim
 	departureEvent.setEventType(EventType::departure);
 	//departureEvent.setTime() = currentEventTime + transactionLength;
 	departureEvent.setNumber(number);
+
+	return departureEvent;
 
 }

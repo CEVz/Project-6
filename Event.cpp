@@ -11,7 +11,7 @@ bool Event::operator<(const Event& rhs) const{
 
 bool Event::operator>(const Event& rhs) const {
 
-	return (double)time > rhs.time;
+	return time > rhs.time;
 
 }
 
