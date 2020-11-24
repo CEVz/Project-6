@@ -1,32 +1,35 @@
+#include <iostream>
+
 Simulation::Simulation() {}
 
 void Simulation::simulate() {
 
-	Simulation arrivalEvent;
-	
-	
 
+	Event arrivalEvent;
+	arrivalEvent.setEventType(EventType::arrival);
+	events.enqueue(arrivalEvent);
 
-	//while (//the event list is not empty) {
-		//Retrieve the next event from the event list
-		//if (//the event is an arrival event) {
-			//processArrival();
-		//}
-		//else {
-		//	processDeparture();
-		//}
-		//stats.addEvent(currentEvent);
-	//}
-	//stats.reportStats();
+	while (!events.isEmpty()) {
+		currentEvent = events.peekFront();
+		if (currentEvent.getEventType() == EventType::arrival) {
+			processArrival();
+		}
+		else {
+			processDeparture();
+		}
+		stats.addEvent(currentEvent);
+	}
+	stats.reportStats();
 }
 
 void Simulation::processArrival() {
 
+	std::cout << "helo";
 
 }
 
 void Simulation::processDeparture() {
 
-
+	std::cout << "helo";
 
 }

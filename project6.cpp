@@ -1,12 +1,12 @@
 #include <cstdlib>
 
-//#include "Simulation.h"
+#include "Simulation.h"
 
 int main() {
 
-   //Simulation sim;
+   Simulation sim;
 
-   //sim.simulate();
+   sim.simulate();
 
    return EXIT_SUCCESS;
 }

@@ -5,16 +5,15 @@
 EventBuilder::EventBuilder() {
 
 	std::string file;
-	int fileContent;
 
 	std::cout << "enter a file name";
 	std::cin >> file;
-	std::ifstream inputFile(file);
+	inputFile.open(file);
 
 	while (!inputFile.is_open()) {
 		std::cout << "enter a valid file, try again";
 		std::cin >> file;
-		std::ifstream inputFile(file);
+		inputFile.open(file);
 	}
 
 	if (inputFile.is_open()){
@@ -40,7 +39,7 @@ Event EventBuilder::createDepartureEvent(const Time& currentEventTime, const Tim
 
 	Event departureEvent;
 	departureEvent.setEventType(EventType::departure);
-	//departureEvent.setTime() = currentEventTime + transactionLength;
+	//departureEvent.getTime() = currentEventTime + transactionLength;
 	departureEvent.setNumber(number);
 
 	return departureEvent;

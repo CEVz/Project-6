@@ -7,8 +7,8 @@
 
 class EventBuilder {
 private:
-   std::ifstream inputFile;
 
+   std::ifstream inputFile;
    int num;
 
 public:

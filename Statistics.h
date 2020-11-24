@@ -37,4 +37,6 @@ public:
    void reportStats() const;
 };
 
+#include "Statistics.cpp"
+
 #endif

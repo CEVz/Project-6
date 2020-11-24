@@ -18,5 +18,14 @@ set(CMAKE_CXX_EXTENSIONs OFF)
 add_executable(main
   project6.cpp
   Event.h
+  EventBuilder.h
+  EventType.h
+  Simulation.h
+  Statistics.h
+  LinkedQueue.h
   PriorityQueue.h
-  LinkedQueue.h)
+  Node.h
+  QueueInterface.h
+  LinkedSortedList.h
+  SortedListInterface.h
+  PrecondViolatedExcep.cpp)

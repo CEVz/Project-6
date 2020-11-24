@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include "Statistics.h"
-
 void Statistics::addEvent(const Event& event) {
 
    if (event.getEventType() == EventType::arrival) {
