@@ -25,4 +25,6 @@ public:
    void simulate();
 };
 
+#include "Simulation.cpp"
+
 #endif

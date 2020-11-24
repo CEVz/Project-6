@@ -1,16 +1,16 @@
 #pragma once
 
-#include "Time.h"
 #include "EventType.h"
+
+using Time = double;
 
 class Event {
 private:
 	
-	//EventType type;
+	EventType type;
 	Time time;
 	Time duration;
 	int number;
-
 
 public:
 
@@ -25,11 +25,11 @@ public:
 	
 	void setTime(const Time& theTime);
 	void setDuration(const Time& theDuration);
-	//void setEvent(const EventType& theType);
-	void setNum(const int theNum);
-	ItemType getTime() const;
-	ItemType getEvent() const;
-	ItemType getDuration() const;
+	void setEventType(const EventType& theType);
+	void setNumber(const int theNum);
+	Time getTime() const;
+	EventType getEventType() const;
+	Time getDuration() const;
 	int getNumber() const;
 
 };

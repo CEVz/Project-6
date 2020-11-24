@@ -9,6 +9,8 @@ class EventBuilder {
 private:
    std::ifstream inputFile;
 
+   int num;
+
 public:
    /** Three things must happen to create an EventBuilder:
     *  1) Prompt the user for the name of an input file

@@ -5,6 +5,7 @@
 EventBuilder::EventBuilder() {
 
 	std::string file;
+	int fileContent;
 
 	std::cout << "enter a file name";
 	std::cin >> file;
@@ -16,18 +17,28 @@ EventBuilder::EventBuilder() {
 		std::ifstream inputFile(file);
 	}
 
+	if (inputFile.is_open()){
+		inputFile >> num;
+		inputFile.close();
+	}
+
 }
 
 Event EventBuilder::createArrivalEvent(int number) {
 
-	EventType::arrival;
+	Event arrivalEvent;
+	arrivalEvent.setEventType(EventType::arrival);
+	arrivalEvent.setNumber(number);
+	arrivalEvent.setTime(num);
+	arrivalEvent.setDuration(num);
 
 }
 
 Event EventBuilder::createDepartureEvent(const Time& currentEventTime, const Time& transactionLength, int number) {
 
-	EventType::departure;
-	number = number;
-	time.setTime() = currentEventTime + transactionLength;
+	Event departureEvent;
+	departureEvent.setEventType(EventType::departure);
+	//departureEvent.setTime() = currentEventTime + transactionLength;
+	departureEvent.setNumber(number);
 
 }

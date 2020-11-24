@@ -1,28 +1,31 @@
-void simulate() {
+Simulation::Simulation() {}
+
+void Simulation::simulate() {
+
+	Simulation arrivalEvent;
+	
+	
 
 
-	LinkedQueue<Event> arrival;
-
-
-	while (//the event list is not empty) {
+	//while (//the event list is not empty) {
 		//Retrieve the next event from the event list
-		if (//the event is an arrival event) {
-			processArrival()
-		}
-		else {
-			processDeparture()
-		}
-		stats.addEvent(currentEvent)
-	}
-	stats.reportStats()
+		//if (//the event is an arrival event) {
+			//processArrival();
+		//}
+		//else {
+		//	processDeparture();
+		//}
+		//stats.addEvent(currentEvent);
+	//}
+	//stats.reportStats();
 }
 
-void processArrival() {
+void Simulation::processArrival() {
 
 
 }
 
-void processDeparture() {
+void Simulation::processDeparture() {
 
 
 

@@ -4,7 +4,7 @@
 
 void Statistics::addEvent(const Event& event) {
 
-   if (event.getType() == EventType::ARRIVAL) {
+   if (event.getEventType() == EventType::arrival) {
 #ifdef TESTING
       std::cout << "Processing arrival event "
                 << event.getNumber()

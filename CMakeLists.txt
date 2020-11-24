@@ -17,5 +17,8 @@ set(CMAKE_CXX_EXTENSIONs OFF)
 
 add_executable(main
   project6.cpp
-  Time.h
-  Event.h "QueueInterface.h")
+  Event.h
+  Statistics.cpp
+  Simulation.h
+  PriorityQueue.h
+  LinkedQueue.h)

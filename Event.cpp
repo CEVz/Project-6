@@ -11,7 +11,7 @@ bool Event::operator<(const Event& rhs) const{
 
 bool Event::operator>(const Event& rhs) const {
 
-	return time > rhs.time;
+	return (double)time > rhs.time;
 
 }
 
@@ -38,12 +38,6 @@ bool Event::operator!=(const Event& rhs) const {
 	return time != rhs.time;
 }
 
-int Event::getNumber() const {
-
-	return number;
-
-}
-
 void Event::setTime(const Time& theTime){
 
 	time = theTime;
@@ -56,32 +50,32 @@ void Event::setDuration(const Time& theDuration) {
 
 }
 
-//void Event::setEvent(const EventType& theType) {
+void Event::setEventType(const EventType& theType) {
 
-//	type = theType;
+	type = theType;
 
-//}
+}
 
-void Event::setNum(const int theNum) {
+void Event::setNumber(const int theNum) {
 
 	number = theNum;
 
 }
 
-ItemType Event::getTime() const {
+Time Event::getTime() const {
 
 	return time;
 
 }
 
-ItemType Event::getEvent() const {
+EventType Event::getEventType() const {
 
 	return type;
 
 }
 
-ItemType Event::getDuration() const {
-
+Time Event::getDuration() const {
+	
 	return duration;
 
 }
